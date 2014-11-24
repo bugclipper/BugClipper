@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.social_media_url = "http://www.twitter.com/bugclipper"
   s.source       = { 
                     :git => "https://github.com/bugclipper/BugClipper.git", 
-                    :tag => s.version 
+                    :tag => s.version.to_s
                     }
   s.platform = :ios, 6.0
   s.requires_arc = true
