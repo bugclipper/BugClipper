@@ -26,5 +26,6 @@ Pod::Spec.new do |s|
 
   s.ios.vendored_frameworks = 'BugClipper.framework'
   s.frameworks     = 'AVFoundation', 'CoreGraphics', 'CoreMedia', 'CoreVideo', 'MobileCoreServices', 'QuartzCore', 'SystemConfiguration'
+  s.ios.exclude_files = '.git', 'README.md', 'BugClipper.podspec'
 
 end
