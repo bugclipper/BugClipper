@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/BCManager.h</key>
 		<data>
-		SiHCUzaIzFTfKNJfjLs1a9zdfP4=
+		vDkSmTm2/izJ0rTv32tiI58zm3k=
 		</data>
 		<key>Headers/BugClipper.h</key>
 		<data>
@@ -14,11 +14,141 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		6E/F+EIjCW6wYtD+Om1nyyqhZkI=
+		5PbT1W+s6utHMvj/N0x0bTpWqec=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		RVqktWKwANEMAHdiLgPsowNdpCA=
+		</data>
+		<key>Quincy.bundle/de.lproj/Quincy.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IwRhxlHiWJx6vkhgGomYLnm4SBk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Quincy.bundle/en.lproj/Quincy.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			elLqMgvlAVtnKiyehcJEJFqJlws=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Quincy.bundle/es.lproj/Quincy.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Qgh/I42YYRUnjmWnWTUEYAW0UPs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Quincy.bundle/fr.lproj/Quincy.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Vi5wjQHmumiY5Ix/p3e2TEQ4+c4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Quincy.bundle/hr.lproj/Quincy.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sJRM6q2rjPU5WQ8RhHhY9NA3eWc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Quincy.bundle/hu.lproj/Quincy.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			opwC6S3iZm56x7q1cSQSPvWwcDg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Quincy.bundle/it.lproj/Quincy.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6S+5c/7V6atQMNbQim7GBNV6Tkw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Quincy.bundle/ja.lproj/Quincy.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vMp1p9Np6/aSmdJ60sEDnEX0TUM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Quincy.bundle/nl.lproj/Quincy.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			boAYlUwZLUUgtOmXUUyvSjpDN8w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Quincy.bundle/pt-PT.lproj/Quincy.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Bw2zWCwX7PH4Zk7esQKfrjVigb8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Quincy.bundle/pt.lproj/Quincy.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			u7nsn8a5wcf/ypSxDHYze+rFB2o=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Quincy.bundle/ro.lproj/Quincy.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5PlgaVhQ0USld4xK8DJxWkdarrM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Quincy.bundle/ru.lproj/Quincy.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ByThepyoFZ3lQrLNUueyI1u9rkc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Quincy.bundle/zh-Hans.lproj/Quincy.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			G0+kK7xdBWdIxEwBoly/2nHAbS0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>black.png</key>
+		<data>
+		0TmsIgHIZQmmvp134oEiwClWnEk=
 		</data>
 		<key>checkmark.png</key>
 		<data>
@@ -27,6 +157,10 @@
 		<key>checkmark@2x.png</key>
 		<data>
 		z21M+FoT5kQ0eoIG6J25MmgzgSQ=
+		</data>
+		<key>embedded.mobileprovision</key>
+		<data>
+		9VIYHiwcYPl5qD/ZlznrsJucIkk=
 		</data>
 		<key>logo.png</key>
 		<data>
@@ -129,7 +263,7 @@
 	<dict>
 		<key>Headers/BCManager.h</key>
 		<data>
-		SiHCUzaIzFTfKNJfjLs1a9zdfP4=
+		vDkSmTm2/izJ0rTv32tiI58zm3k=
 		</data>
 		<key>Headers/BugClipper.h</key>
 		<data>
@@ -139,6 +273,136 @@
 		<data>
 		RVqktWKwANEMAHdiLgPsowNdpCA=
 		</data>
+		<key>Quincy.bundle/de.lproj/Quincy.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IwRhxlHiWJx6vkhgGomYLnm4SBk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Quincy.bundle/en.lproj/Quincy.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			elLqMgvlAVtnKiyehcJEJFqJlws=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Quincy.bundle/es.lproj/Quincy.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Qgh/I42YYRUnjmWnWTUEYAW0UPs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Quincy.bundle/fr.lproj/Quincy.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Vi5wjQHmumiY5Ix/p3e2TEQ4+c4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Quincy.bundle/hr.lproj/Quincy.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sJRM6q2rjPU5WQ8RhHhY9NA3eWc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Quincy.bundle/hu.lproj/Quincy.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			opwC6S3iZm56x7q1cSQSPvWwcDg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Quincy.bundle/it.lproj/Quincy.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6S+5c/7V6atQMNbQim7GBNV6Tkw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Quincy.bundle/ja.lproj/Quincy.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vMp1p9Np6/aSmdJ60sEDnEX0TUM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Quincy.bundle/nl.lproj/Quincy.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			boAYlUwZLUUgtOmXUUyvSjpDN8w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Quincy.bundle/pt-PT.lproj/Quincy.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Bw2zWCwX7PH4Zk7esQKfrjVigb8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Quincy.bundle/pt.lproj/Quincy.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			u7nsn8a5wcf/ypSxDHYze+rFB2o=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Quincy.bundle/ro.lproj/Quincy.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5PlgaVhQ0USld4xK8DJxWkdarrM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Quincy.bundle/ru.lproj/Quincy.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ByThepyoFZ3lQrLNUueyI1u9rkc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Quincy.bundle/zh-Hans.lproj/Quincy.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			G0+kK7xdBWdIxEwBoly/2nHAbS0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>black.png</key>
+		<data>
+		0TmsIgHIZQmmvp134oEiwClWnEk=
+		</data>
 		<key>checkmark.png</key>
 		<data>
 		VAWtCd3qQOXhHaqXrFWXDKmO6g8=
@@ -146,6 +410,10 @@
 		<key>checkmark@2x.png</key>
 		<data>
 		z21M+FoT5kQ0eoIG6J25MmgzgSQ=
+		</data>
+		<key>embedded.mobileprovision</key>
+		<data>
+		9VIYHiwcYPl5qD/ZlznrsJucIkk=
 		</data>
 		<key>logo.png</key>
 		<data>

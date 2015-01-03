@@ -7,10 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
-
-typedef NS_ENUM(NSUInteger, InvokerType)
-{
+/**
+ *  InvokerType specifies how the bug needs to be reported, either Actively i.e by the Tester or Passively i.e by the End User
+ */
+typedef NS_ENUM(NSUInteger, InvokerType){
+    /**
+     *  Adds a invoker on the screen so that the tester can report the bugs easily
+     */
     InvokerDeveloperMode,
+    /**
+     *  Used for Production build, when the developer wants to trigger BugClipper on click of a button from settings or some other event.
+     */
     InvokerProductionMode,
 };
 
@@ -34,7 +41,7 @@ typedef NS_ENUM(NSUInteger, InvokerType)
 /**
  *  Invoker type specifes how you want to invoke the bugclipper
  *
- *  @param type - InvokerDeveloperMode (default) : a invoker view will be visible in all the viewcontroller (recommended
+ *  @param invokerType - InvokerDeveloperMode (default) : a invoker view will be visible in all the viewcontroller (recommended
  for Tester/Development mode)
  - InvokerProductionMode : you need to add a menu item in your settings and on selection of that menu item you need to invoke showBugClipperMenu.
  */
@@ -60,7 +67,7 @@ typedef NS_ENUM(NSUInteger, InvokerType)
 +(BOOL)launchWithKey:(NSString *)licenseKey attachTo:(UIWindow *)window;
 
 /**
- *  Show the BugClipper Menu. Should be used only when InvokeMode is FROM_SETTINGS.
+ *  Show the BugClipper Menu. Should be used only when InvokeMode is InvokeProductionMode.
  */
 +(void)showBugClipperMenu;
 
@@ -71,23 +78,31 @@ typedef NS_ENUM(NSUInteger, InvokerType)
 +(void)attachToWindow:(UIWindow *)window;
 
 /**
- *
+ *  EmailAdress to identify the user who is reporting the bug.
  *
  *  @param email Email address of the user
  */
 +(void)setEmailAddress:(NSString *)email;
 
 /**
- *  <#Description#>
+ *  UserID to identify the user who is reporting the bug.
  *
- *  @param userID <#userID description#>
+ *  @param userID End User
  */
 +(void)setUserID:(NSString *)userID;
 
 /**
- *  <#Description#>
+ *  Additional debug info if the developer want to add to the bug report
  *
- *  @param additionalInfo <#additionalInfo description#>
+ *  @param additionalInfo
  */
 +(void)setAdditionalInfo:(NSString *)additionalInfo;
+
+/**
+ *  Base URL at which all the API calls will be made, URL address of the server
+ *
+ *  @param baseURL URL of the server
+ */
++(void)setBaseURL:(NSString *)baseURL;
+
 @end
