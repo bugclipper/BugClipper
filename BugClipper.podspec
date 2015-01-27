@@ -28,5 +28,8 @@ Pod::Spec.new do |s|
   s.ios.vendored_frameworks = 'BugClipper.framework'
   s.frameworks     = 'AVFoundation', 'CoreGraphics', 'CoreMedia', 'CoreVideo', 'MobileCoreServices', 'QuartzCore', 'SystemConfiguration', 'CoreTelephony'
   s.ios.exclude_files = '.git', 'README.md', 'BugClipper.podspec'
+  s.xcconfig =  {
+    'OTHER_LDFLAGS' => '-ObjC -all_load'
+  }
 
 end
