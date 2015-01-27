@@ -1,6 +1,0 @@
-framework module BugClipper {
-  umbrella header "BugClipper.h"
-
-  export *
-  module * { export * }
-}
