@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'BugClipper'
-  s.version  = '2.0.0'
+  s.version  = '2.0.1'
   s.summary = "BugClipper SDK for iOS applications"
   s.description = <<-DESC
                   Visit http://www.bugclipper.com to get a key.
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
 
   s.resources = 'BugClipper.bundle'
   s.ios.vendored_frameworks = 'BugClipper.framework'
-  s.frameworks     = 'AVFoundation', 'CoreGraphics', 'CoreMedia', 'CoreVideo', 'MobileCoreServices', 'QuartzCore', 'SystemConfiguration', 'CoreTelephony'
+  s.frameworks     = 'AVFoundation', 'CoreGraphics', 'CoreMedia', 'CoreVideo', 'MobileCoreServices', 'QuartzCore', 'SystemConfiguration', 'CoreTelephony', 'GLKit', 'MediaPlayer'
   s.ios.exclude_files = '.git', 'README.md', 'BugClipper.podspec'
   s.xcconfig =  {
     'OTHER_LDFLAGS' => '-ObjC -all_load'
