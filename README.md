@@ -1,4 +1,4 @@
-BugClipper
+Bugclipper
 ==========
 
-In-app bug reporting and user feedbacks for mobile apps
+Bug tracker for mobile apps.
