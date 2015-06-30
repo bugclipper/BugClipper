@@ -70,16 +70,6 @@ typedef NS_ENUM(NSUInteger, ShakeGestureEvent){
 +(BOOL)launchWithKey:(NSString *)licenseKey;
 
 /**
- *  Launch the Bugclipper and specify the operation window
- *
- *  @param licenseKey unique key provided by BugClipper
- *  @param window     Specify the window to be used for taking snapshot, video recording, etc
- *
- *  @return bool if the launch was successful
- */
-+(BOOL)launchWithKey:(NSString *)licenseKey attachTo:(UIWindow *)window;
-
-/**
  *  Enable / Disable Shake Gesture on Production Mode
  *
  *  @param shakeEnabled
@@ -97,12 +87,6 @@ typedef NS_ENUM(NSUInteger, ShakeGestureEvent){
  *  Show the BugClipper Menu. Should be used only when InvokeMode is InvokeProductionMode.
  */
 +(void)showBugClipperMenu;
-
-/**
- *  Attaches the Bugclipper invoker to the new window, call only when you replace the current window, otherwise not required
- *  @param window
- */
-+(void)attachToWindow:(UIWindow *)window;
 
 /**
  *  EmailAdress to identify the user who is reporting the bug.
