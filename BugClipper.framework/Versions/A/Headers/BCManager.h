@@ -109,4 +109,9 @@ typedef NS_ENUM(NSUInteger, ShakeGestureEvent){
  */
 +(void)setAdditionalInfo:(NSString *)additionalInfo;
 
+/**
+ *  Updates the Status bar
+ */
++(void)setNeedsStatusBarAppearanceUpdate;
+
 @end
