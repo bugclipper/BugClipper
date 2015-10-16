@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'BugClipper'
-  s.version  = '2.1.4'
+  s.version  = '2.2.0'
   s.summary = "BugClipper SDK for iOS applications"
   s.description = <<-DESC
                   Visit http://www.bugclipper.com to get a key.
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
                     :git => "https://github.com/bugclipper/BugClipper.git", 
                     :tag => s.version.to_s
                     }
-  s.platform = :ios, 6.0
+  s.platform = :ios, 7.0
   s.requires_arc = true
 
   s.resources = 'BugClipper.bundle'
