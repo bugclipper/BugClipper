@@ -114,4 +114,19 @@ typedef NS_ENUM(NSUInteger, ShakeGestureEvent){
  */
 +(void)setNeedsStatusBarAppearanceUpdate;
 
+/**
+ *  Set the value to YES if you are on Enterprise plan. Default value is NO
+ *
+ *  @param isEnterpriseMode
+ */
++(void)setEnterpriseMode:(BOOL)isEnterpriseMode;
+
+/**
+ *  Base URL at which all the API calls will be made, URL address of the server only if you have your custom bugclipper dashboard configured.
+ *
+ *  @param baseURL URL of the server
+ */
++(void)setBaseURL:(NSString *)baseURL;
+
+
 @end
