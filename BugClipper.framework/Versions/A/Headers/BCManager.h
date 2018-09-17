@@ -38,18 +38,13 @@ typedef NS_ENUM(NSUInteger, ShakeGestureEvent){
 
 @interface BCManager : NSObject
 /**
- * initiateHandler block will be called whenever the BugClipper library initiates bug handling,
- * In case of Unity Games, it will be very useful to pause the game here.
- */
-+(void)setWillInitiateBugReportingBlock:(void(^)(void))initiateHandler;
-
-/**
- *  Executes the finishHandler block when the BugClipper Library is done with bug reporting.
- *  In case of Unity games, it will be very useful to resume the game here.
+ *  Launch the Bugclipper
  *
- *  @param finishHandler
+ *  @param licenseKey unique key provided by BugClipper
+ *
+ *  @return bool if the launch was successful
  */
-+(void)setDidFinishBugReportingBlock:(void(^)(void))finishHandler;
++(BOOL)launchWithKey:(NSString *)licenseKey;
 
 /**
  *  Invoker type specifes how you want to invoke the bugclipper
@@ -61,32 +56,32 @@ typedef NS_ENUM(NSUInteger, ShakeGestureEvent){
 +(void)setInvokerMode:(InvokerType)invokerType;
 
 /**
- *  Launch the Bugclipper
- *
- *  @param licenseKey unique key provided by BugClipper
- *
- *  @return bool if the launch was successful
- */
-+(BOOL)launchWithKey:(NSString *)licenseKey;
-
-/**
- *  Enable / Disable Shake Gesture on Production Mode
- *
- *  @param shakeEnabled
- */
-+(void)setShakeGestureEnabled:(BOOL)shakeEnabled;
-
-/**
- *  Specifies the event which should be invoked when then ShakeGesture is invoked
- *
- *  @param event
- */
-+(void)setShakeGestureEvent:(ShakeGestureEvent)event;
-
-/**
  *  Show the BugClipper Menu. Should be used only when InvokeMode is InvokeProductionMode.
  */
 +(void)showBugClipperMenu;
+
+/**
+ *  Set the value to YES if you are on Enterprise plan. Default value is NO
+ *
+ *  @param isEnterpriseMode set the value to YES if your are an Enterprise
+ */
++(void)setEnterpriseMode:(BOOL)isEnterpriseMode;
+
+/**
+ *  Base URL at which all the API calls will be made, URL address of the server only if you have your custom bugclipper dashboard configured.
+ *
+ *  @param baseURL URL of the server
+ */
++(void)setBaseURL:(NSString *)baseURL;
+
+/**
+ * To record non native components user steps
+ *
+ * @param eventName Name of the event for which user step needs to be recorded
+ * @param payload Info to describe the user step event
+ * @param origin Describes from where the user step was initiated
+ */
++(void)appendHybridSteps:(NSString*)eventName payload:(NSDictionary *)payload origin: (NSString *)origin;
 
 /**
  *  EmailAdress to identify the user who is reporting the bug.
@@ -103,11 +98,12 @@ typedef NS_ENUM(NSUInteger, ShakeGestureEvent){
 +(void)setUserID:(NSString *)userID;
 
 /**
- *  Additional debug info if the developer want to add to the bug report
+ * Additional User Payload to identify the user better
  *
- *  @param additionalInfo
+ * @param payload Contains additional information about the current user
  */
-+(void)setAdditionalInfo:(NSString *)additionalInfo;
+
++(void)setCustomUserPayload:(NSDictionary *)payload;
 
 /**
  *  Updates the Status bar
@@ -115,18 +111,36 @@ typedef NS_ENUM(NSUInteger, ShakeGestureEvent){
 +(void)setNeedsStatusBarAppearanceUpdate;
 
 /**
- *  Set the value to YES if you are on Enterprise plan. Default value is NO
+ *  Enable / Disable Shake Gesture on Production Mode
  *
- *  @param isEnterpriseMode
+ *  @param shakeEnabled If YES then Report bug view will be shown to the user on shake gesture
  */
-+(void)setEnterpriseMode:(BOOL)isEnterpriseMode;
++(void)setShakeGestureEnabled:(BOOL)shakeEnabled;
 
 /**
- *  Base URL at which all the API calls will be made, URL address of the server only if you have your custom bugclipper dashboard configured.
+ *  Specifies the event which should be invoked when then ShakeGesture is invoked
  *
- *  @param baseURL URL of the server
+ *  @param event
  */
-+(void)setBaseURL:(NSString *)baseURL;
++(void)setShakeGestureEvent:(ShakeGestureEvent)event;
 
+/**
+ * initiateHandler block will be called whenever the BugClipper library initiates bug handling,
+ * In case of Unity Games, it will be very useful to pause the game here.
+ */
++(void)setWillInitiateBugReportingBlock:(void(^)(void))initiateHandler;
+
+/**
+ *  Executes the finishHandler block when the BugClipper Library is done with bug reporting.
+ *  In case of Unity games, it will be very useful to resume the game here.
+ *
+ *  @param finishHandler
+ */
++(void)setDidFinishBugReportingBlock:(void(^)(void))finishHandler;
+
+///**
+// *
+// */
+//+(void)setNetworkCertificatePath:(NSString *)path;
 
 @end

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'BugClipper'
-  s.version  = '2.4.1'
+  s.version  = '3.0.9'
   s.summary = "BugClipper SDK for iOS applications"
   s.description = <<-DESC
                   Visit http://www.bugclipper.com to get a key.
@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.license      = {
     :type => 'Commercial',
     :text => <<-LICENSE
-                Copyright (c) 2015-2016, BugClipper Technologies.
+                Copyright (c) 2018-2019, BugClipper Technologies.
                 All rights reserved.
     LICENSE
   }
