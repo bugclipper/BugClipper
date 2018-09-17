@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'BugClipper'
-  s.version  = '3.0.9'
+  s.version  = '3.1.0'
   s.summary = "BugClipper SDK for iOS applications"
   s.description = <<-DESC
                   Visit http://www.bugclipper.com to get a key.
